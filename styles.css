@@ -95,7 +95,7 @@ html, body {
 .mdl-komodo section.section--center {
   max-width: 860px;
 }
-.mdl-komodo #features section.section--center {
+.mdl-komodo #details section.section--center {
   max-width: 620px;
 }
 .mdl-komodo section > header{
@@ -166,10 +166,10 @@ html, body {
 .mdl-komodo .mdl-layout__tab-panel:not(#overview) {
   background-color: white;
 }
-.mdl-komodo #features section {
+.mdl-komodo #details section {
   margin-bottom: 72px;
 }
-.mdl-komodo #features h4, #features h5 {
+.mdl-komodo #details h4, #details h5 {
   margin-bottom: 16px;
 }
 .mdl-komodo .toc {
