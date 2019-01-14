@@ -1,1 +1,206 @@
-Hello World
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Komodo-Qt (KomodoOcean)</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./material.min.css">
+    <script src="./material.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-komodo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Komodo-Qt</h3>
+        </div>
+
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#features" class="mdl-layout__tab">Features</a>
+
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+
+        <span class="KomodoVector KomodoVector--left"><svg height="50" width="50" viewBox="0 0 300 154" aria-hidden="true">
+          <path d="M150.5,83.7l28.3-11.6l11.8-28.3L179,15.3L150.8,3.7l-28.3,11.6v0.2l-11.8,28.3l11.6,28.3L150.5,83.7z
+          M132.9,26L132.9,26l17.9-7.5l17.9,7.5l7.5,17.9l-7.5,17.9l-17.9,7.5l-17.9-7.5l-7.5-17.9L132.9,26z"></path> 
+          <polygon points="150.8,58.6 161.1,54.2 165.5,43.6 161.1,33.2 150.8,28.9 140.4,33.2 136,43.6 140.1,54.2"></polygon>
+        </svg></span>
+
+        <span class="KomodoVector KomodoVector--right"><svg height="50" width="50" viewBox="0 0 300 154" aria-hidden="true">
+            <path d="M150.5,83.7l28.3-11.6l11.8-28.3L179,15.3L150.8,3.7l-28.3,11.6v0.2l-11.8,28.3l11.6,28.3L150.5,83.7z
+            M132.9,26L132.9,26l17.9-7.5l17.9,7.5l7.5,17.9l-7.5,17.9l-17.9,7.5l-17.9-7.5l-7.5-17.9L132.9,26z"></path> 
+            <polygon points="150.8,58.6 161.1,54.2 165.5,43.6 161.1,33.2 150.8,28.9 140.4,33.2 136,43.6 140.1,54.2"></polygon>
+          </svg></span>
+
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Overview</h4>
+                <ul>
+                  <li><strong>Komodo-Qt</strong> is a first native Qt wallet for KMD (Komodo) and all assetchains. It's based on original komodod (komodo daemon) sources, but with integrated Qt GUI. Like a Bitcoin Core have bitcoind and bitcoin-qt: just a daemon and Qt wallet, as well as Komodo now have komodod and komodo-qt as a wallet.</li>
+                  <li>Fully written in C/C++, it doesn't include any slow NodeJS parts, like Agama Wallet. And doesn't need any additional RPC interaction with daemon, bcz it built with daemon itself.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white wallet-pillar-image">
+            </div>
+
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary crossplatform-image"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Cross-platform solution</h5>
+                  Now <strong>komodo-qt</strong> is available on three OS Plaforms - <a href="https://github.com/DeckerSU/KomodoOcean/tree/master" target="_blank">Windows</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/Linux" target="_blank">Linux</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/MacOS" target="_blank">MacOS</a> (64-bit). For each platform GitHub repo contains it's own branch. Binary <a href="https://github.com/DeckerSU/KomodoOcean/releases" target="_blank">releases</a> currently provided only for Windows, for other platforms wallet should be compiled from sources. It is not as difficult as it seems, each platform branch includes step-by-step build guide.
+                </div>
+  
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary system-requirements-image"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>System Requirements</h5>
+                  <ul>
+                    <li>64-bit OS based PC</li>
+                    <li>At least 4 Gb of <b>free</b> RAM (8 or 16 Gb physical RAM recommended).</li>
+                    <li>About ~10-15 Gb of storage space to sync full blockchain (SSD drive is recommended)</li>
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+
+          </section>
+
+          <!--
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Technology</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+            
+          </section>
+          -->
+
+          <!--
+          <section class="section--footer mdl-color--white mdl-grid">
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            </div>
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            </div>
+          </section>
+          -->
+
+        </div>
+
+        <div class="mdl-layout__tab-panel" id="features">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Features</h4>
+
+              <p>Description will be soon ...</p>
+
+            </div>
+          </section>
+        </div>
+
+        <div><p></p></div>
+
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              komodo-qt.io
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://komodoplatform.com/" target="_blank">KomodoPlatform</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="https://github.com/DeckerSU/KomodoOcean" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--primary mdl-color-text--accent-contrast">View Source</a>
+    <script src="./material.min.js"></script>
+  </body>
+</html>
