@@ -207,20 +207,35 @@ html, body {
   background: url('images/placeholder-icon.png');
   background-position: center;
   background-size: contain;
-  width: 75px;
-  height: 101px;
+  /*width: 75px;
+  height: 101px;*/
+  background-repeat: no-repeat;
+
 }
 
 .mdl-komodo .system-requirements-image {
   background: url('images/system-requirements.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mdl-komodo .crossplatform-image {
   background: url('images/windows-linux-macos.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.mdl-komodo img.template__preview {
+  width: auto;
+  height: 100%;
+  padding: 1em;
 }
 
 /*
