@@ -83,8 +83,8 @@
               <div class="mdl-card__supporting-text">
                 <h4>Overview</h4>
                 <ul>
-                  <li><strong>Komodo-Qt</strong> is a first native Qt wallet for KMD (Komodo) and all assetchains. It's based on original komodod (komodo daemon) sources, but with integrated Qt GUI. Like a Bitcoin Core have bitcoind and bitcoin-qt: just a daemon and Qt wallet, as well as Komodo now have komodod and komodo-qt as a wallet.</li>
-                  <li>Fully written in C/C++, it doesn't include any slow NodeJS parts, like Agama Wallet. And doesn't need any additional RPC interaction with daemon, bcz it built with daemon itself.</li>
+                  <li><strong>Komodo-Qt</strong> is the first native Qt wallet for KMD (Komodo) and all assetchains. It is based on original `komodod` (Komodo daemon), but with integrated Qt GUI. Like the Bitcoin Core have bitcoind and bitcoin-qt: just a daemon and Qt wallet, Komodo now also have komodod and komodo-qt as a wallet.</li>
+                  <li>Fully written in C/C++. It doesn't include any slow NodeJS parts, like Agama Wallet. And doesn't need any additional RPC interaction with daemon, because it has built-in daemon functionality.</li>
                 </ul>
               </div>
 
@@ -106,7 +106,7 @@
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5>Cross-platform</h5>
-                  Now <strong>komodo-qt</strong> is available on three OS Plaforms - <a href="https://github.com/DeckerSU/KomodoOcean/tree/master" target="_blank">Windows</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/Linux" target="_blank">Linux</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/MacOS" target="_blank">MacOS</a> (64-bit). For each platform GitHub repo contains it's own branch. Binary <a href="https://github.com/DeckerSU/KomodoOcean/releases" target="_blank">releases</a> currently provided only for Windows, for other platforms wallet should be compiled from sources. It is not as difficult as it seems, each platform branch includes step-by-step build guide.
+                  Now <strong>komodo-qt</strong> is available on all OS - <a href="https://github.com/DeckerSU/KomodoOcean/tree/master" target="_blank">Windows</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/Linux" target="_blank">Linux</a>, <a href="https://github.com/DeckerSU/KomodoOcean/tree/MacOS" target="_blank">MacOS</a> (64-bit). For each OS GitHub repo contains it's own branch. Binary <a href="https://github.com/DeckerSU/KomodoOcean/releases" target="_blank">releases</a> currently available only for Windows, for other platforms user should compile from source. It is not difficult to do so. Just use open a terminal window and issue the commands there. Each OS branch includes step-by-step build guide.
                 </div>
   
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
@@ -115,9 +115,9 @@
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5>System Requirements</h5>
                   <ul>
-                    <li>64-bit OS based PC</li>
-                    <li>At least 4 Gb of <b>free</b> RAM (8 or 16 Gb physical RAM recommended).</li>
-                    <li>About ~10-15 Gb of storage space to sync full blockchain (SSD drive is recommended)</li>
+                    <li>64-bit Operating System</li>
+                    <li>At least 4 GB of <b>free</b> RAM (8 or 16 GB physical RAM recommended).</li>
+                    <li>About ~10-15 GB of storage space to sync full blockchain (SSD drive is recommended)</li>
                   </ul>
                 </div>
 
@@ -142,7 +142,7 @@
               <div class="mdl-card__supporting-text mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
                   <h3 class="template__header mdl-cell mdl-cell--12-col mdl-typography--body-2">Main window</h3>
                   <p class="mdl-cell mdl-cell--12-col">
-                    Main window looks like same window in Bitcoin Core, but additionally you can see your rewards (interest) and private (Z) balance here.
+                    Main window looks like same window in Bitcoin Core, but additionally you can see your Komodo active user rewards and private (Z) balance here.
                   </p>
                   <a href="images/komodo-qt-screenshot-01.png" class="mdl-cell mdl-cell--12-col">
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" data-upgraded=",MaterialButton,MaterialRipple">
@@ -156,7 +156,7 @@
               <div class="mdl-card__supporting-text mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
                   <h3 class="template__header mdl-cell mdl-cell--12-col mdl-typography--body-2">Send tab</h3>
                   <p class="mdl-cell mdl-cell--12-col">
-                    Here is standart Bitcoin Core send tab, you can add multiple recepients, set up custom change address (advanced coin control feautures should be enabled in Settings) and send your coins. This tab is used only for t-addresses (started with R) transactions.
+                    Here is standard KomodoOceanQT wallet send tab, you can add multiple recepients, set up custom change address (advanced coin control feautures should be enabled in Settings) and send your coins. This tab is used only for t (address starts with R) transactions.
                   </p>
                   <a href="images/komodo-qt-screenshot-02.png" class="mdl-cell mdl-cell--12-col">
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" data-upgraded=",MaterialButton,MaterialRipple">
